@@ -1,0 +1,37 @@
+$dark-color: #0B0C0E;
+$general-transition-time: .5s;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin element-size($height: 100%, $width: 100%) {
+  height: $height;
+  width: $width;
+}
+
+@mixin smooth-appearance {
+  animation: appearance $general-transition-time;
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  @include flex-center;
+  @include element-size(100vh, 100vw);
+
+  .pageContentContainer {
+    @include flex-center;
+    @include element-size(100%, 90%);
+    max-width: 1280px;
+  }
+}

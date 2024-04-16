@@ -1,0 +1,30 @@
+@import "src/App";
+
+.main {
+  @include element-size(auto, 100%);
+  display: flex;
+  flex-direction: column;
+
+  .titleContainer {
+    @include element-size(auto, 100%);
+    display: flex;
+
+    .title {
+      color: $dark-color;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 48px;
+      letter-spacing: .02em;
+    }
+
+    .allThinksButtonContainer {
+      margin: auto 0 0 auto;
+    }
+  }
+
+  .productsContainer {
+    @include element-size(598px, 100%);
+    @include flex-center();
+    margin-top: 16px;
+  }
+}

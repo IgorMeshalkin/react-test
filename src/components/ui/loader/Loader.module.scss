@@ -1,0 +1,20 @@
+@import "src/App";
+
+.loader {
+  @include element-size(50px, 50px);
+  border: 5px $dark-color solid;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  transition: .3s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
