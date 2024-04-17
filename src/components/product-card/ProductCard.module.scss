@@ -21,6 +21,7 @@ $general-padding: 16px;
   margin-right: 16px;
   border-radius: 12px;
   border: 1px $grey-light-color solid;
+  box-sizing: border-box;
   overflow: hidden;
 
   .imageContainer {
@@ -91,7 +92,7 @@ $general-padding: 16px;
       font-size: 24px;
       line-height: 32px;
       font-weight: 800;
-      margin-right: 7px;
+      margin-right: 6px;
     }
 
     .fullPrice {
@@ -100,7 +101,7 @@ $general-padding: 16px;
       line-height: 20px;
       color: $full-price-grey-color;
       text-decoration: line-through;
-      margin-right: 7px;
+      margin-right: 6px;
     }
 
     .discount {

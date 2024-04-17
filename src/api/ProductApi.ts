@@ -2,9 +2,9 @@ import {getProductFromApiResponse, Product} from "../types/product";
 import {getData} from "../source/data";
 import {FakeApiResponse} from "../types/fakeApiResponse";
 
-// Mocks api request.
 export default class ProductApi {
 
+    // Mocks async request to api.
     static getProducts = (): Promise<FakeApiResponse> => {
         return new Promise<FakeApiResponse>(resolve => {
             setTimeout(() => {

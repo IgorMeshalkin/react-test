@@ -14,6 +14,7 @@ $yellow-color: #ECD06C;
 
 // Another properties
 $general-transition-time: .5s;
+$max-view-width: 1280px;
 
 @mixin flex-center {
   display: flex;
@@ -46,6 +47,6 @@ $general-transition-time: .5s;
   .pageContentContainer {
     @include flex-center;
     @include element-size(100%, 90%);
-    max-width: 1280px;
+    max-width: $max-view-width;
   }
 }

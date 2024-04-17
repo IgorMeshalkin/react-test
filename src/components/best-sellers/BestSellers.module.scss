@@ -23,11 +23,19 @@
   }
 
   .productsContainer {
-    @include element-size(598px, 100%);
+    @include element-size(600px, 100%);
     display: flex;
     align-items: center;
     justify-content: start;
     margin-top: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .productsContainer::-webkit-scrollbar {
+    display: none;
   }
 
   .productsContainer.loader {
