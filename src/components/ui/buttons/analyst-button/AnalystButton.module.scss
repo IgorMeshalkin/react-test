@@ -1,0 +1,5 @@
+@import "src/App";
+
+.image {
+  @include element-size(20px, 20px);
+}

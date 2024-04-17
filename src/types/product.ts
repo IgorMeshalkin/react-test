@@ -26,7 +26,7 @@ export const getProductFromApiResponse = (responseObjects:any):Product => {
         },
         price: {
             price: responseObjects.prices.price,
-            discount: responseObjects.prices.discount
+            discount: responseObjects.prices.discount ? responseObjects.prices.discount : 0
         }
     }
 }
@@ -38,7 +38,7 @@ type Specifications = {
     coins: string;
 }
 
-type Promotion = {
+export type Promotion = {
     discount: number;
     new: boolean;
     hit: boolean;

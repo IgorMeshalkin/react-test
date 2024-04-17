@@ -1,0 +1,123 @@
+@import "src/App";
+
+// Sizes
+$full-height: 598px;
+$full-weight: 308px;
+$image-height: 240px;
+$info-height: 170px;
+$name-height: 56px;
+$specification-height: 70px;
+$promotion-height: 48px;
+$price-height: 64px;
+$button-height: 76px;
+
+// Padding
+$general-padding: 16px;
+
+.main {
+  @include element-size($full-height, $full-weight);
+  @include smooth-appearance;
+  min-width: 308px;
+  margin-right: 16px;
+  border-radius: 12px;
+  border: 1px $grey-light-color solid;
+  overflow: hidden;
+
+  .imageContainer {
+    @include element-size($image-height, 100%);
+    @include flex-center;
+    border: 1px $grey-light-color none;
+    border-bottom-style: solid;
+
+    .image {
+      height: 90%;
+    }
+  }
+
+  .infoContainer {
+    @include element-size($info-height, 100%);
+    @include flex-center;
+    padding: $general-padding;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .name {
+      @include element-size($name-height, 100%);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .specificationsContainer {
+      @include element-size($specification-height, 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .specificationTitle {
+        font-family: Inter, serif;
+        font-weight: 400;
+        color: $grey-dark-color;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      .specificationValue {
+        font-family: Inter, serif;
+        color: $dark-color;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .promotionContainer {
+    @include element-size($promotion-height, 100%);
+    padding: $general-padding 12px;
+    box-sizing: border-box;
+  }
+
+  .priceContainer {
+    @include element-size($price-height, 100%);
+    display: flex;
+    align-items: center;
+    padding: $general-padding;
+    box-sizing: border-box;
+
+    .price {
+      font-family: Inter, serif;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 800;
+      margin-right: 7px;
+    }
+
+    .fullPrice {
+      font-family: Inter, serif;
+      font-size: 13px;
+      line-height: 20px;
+      color: $full-price-grey-color;
+      text-decoration: line-through;
+      margin-right: 7px;
+    }
+
+    .discount {
+      font-family: Inter, serif;
+      background-color: $yellow-color;
+      border-radius: 4px;
+      padding: 0 4px 0 4px;
+      color: $dark-color;
+      line-height: 20px;
+    }
+  }
+
+  .buttonsContainer {
+    @include element-size($button-height, 100%);
+    @include flex-center;
+    justify-content: space-between;
+    padding: $general-padding;
+    box-sizing: border-box;
+  }
+}

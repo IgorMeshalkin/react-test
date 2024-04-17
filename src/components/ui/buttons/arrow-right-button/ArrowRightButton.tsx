@@ -1,6 +1,6 @@
 import React from 'react';
 import st from './ArrowRightButton.module.scss';
-import arrowImage from '../../../source/images/arrow.png'
+import arrowImage from '../../../../source/images/arrow.png'
 
 const ArrowRightButton: React.FC<{text:string}> = ({text}) => {
     return (

@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+// Colors
 $dark-color: #0B0C0E;
+$light-color: #FFFFFF;
+$medium-light-color: #F8F8F8;
+$grey-dark-color: #596173;
+$full-price-grey-color: #80899C;
+$grey-light-color: #E2E4E9;
+$blue-color: #0090FF;
+$green-color: #46A758;
+$orange-color: #F76B15;
+$yellow-color: #ECD06C;
+
+// Another properties
 $general-transition-time: .5s;
 
 @mixin flex-center {

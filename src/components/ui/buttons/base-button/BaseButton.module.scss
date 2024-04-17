@@ -1,0 +1,33 @@
+@import "src/App";
+
+.main {
+  display: inline-block;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: Inter, serif;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.main.dark {
+  background-color: $dark-color;
+  color: $light-color;
+}
+
+.main.medium {
+  background-color: $medium-light-color;
+  color: $dark-color;
+}
+
+.main.light {
+  color: $dark-color;
+}
+
+.main.line {
+  padding: 12px 16px;
+}
+
+.main.square {
+  padding: 12px;
+}

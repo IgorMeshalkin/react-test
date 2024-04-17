@@ -1,0 +1,13 @@
+@import "src/App";
+
+.childrenContainer {
+  @include flex-center;
+}
+
+.image {
+  @include element-size(20px, 20px);
+}
+
+.image.space {
+  margin-right: 8px;
+}

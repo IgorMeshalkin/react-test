@@ -50,7 +50,7 @@ export const getData = () => {
                 new: true,
             },
             prices: {
-                price: 190,
+                price: 190000,
                 discount: 8000
             }
         },
@@ -67,7 +67,7 @@ export const getData = () => {
                 discount: 60,
             },
             prices: {
-                price: 205,
+                price: 205000,
                 discount: 13000
             }
         }

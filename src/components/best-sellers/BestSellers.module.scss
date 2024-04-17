@@ -24,7 +24,13 @@
 
   .productsContainer {
     @include element-size(598px, 100%);
-    @include flex-center();
+    display: flex;
+    align-items: center;
+    justify-content: start;
     margin-top: 16px;
+  }
+
+  .productsContainer.loader {
+    justify-content: center;
   }
 }
